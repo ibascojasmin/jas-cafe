@@ -1,0 +1,141 @@
+
+
+*{
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #f4f4f4;
+}
+@font-face {
+font-family: "RobotoLight";
+src: url("../font/roboto.light.ttf");
+
+}
+
+
+@font-face {
+font-family: "DancingScript";
+src: url("../font/DancingScript-SemiBold.ttf");
+
+}
+
+
+
+@font-face {
+font-family: "RobotoReg";
+src: url("../font/roboto.regular.ttf")format('truetype');
+
+}
+
+h1{
+	text-align: center;
+	color: black;
+	padding: 35px;
+	font-family: DancingScript,cursive;
+	color: #DB92B8;
+	font-size: 50px;
+}
+
+.menu{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 30px 30px;
+	grid-column-gap: 20px;
+	grid-row-gap: 30px;
+
+}
+.item img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	cursor: pointer;
+
+	-webkit-transform: scale(.9);
+	transform: scale(.9);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}
+.item img:hover{
+		-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.item h4{
+	padding: 5px;
+	font-family: DancingScript,Tahoma;
+	font-size: 30px;
+	text-align: center;
+}
+.item p{
+	padding:10px ;
+	text-align: center;
+	font-size: 12px;
+	font-family: RobotoLight,Arial,sans-serif;
+}
+
+.item button{
+
+	padding: 5px 30px;
+	outline: none;
+	cursor: pointer;
+	margin: 0 auto;
+	background-color:#969494;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 10px;
+	display:block;
+	color: white;
+	font-family:RobotoReg;
+	font-size:20px;
+	
+	
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+
+
+
+}
+
+input[type="button"]
+{
+
+	outline: none;
+	cursor: pointer;
+	margin: 0 auto;
+	background-color:#969494;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 10px;
+	display:block;
+	color: white;
+	font-family:RobotoReg;
+	font-size:20px;
+	
+	
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	
+
+}
+input[type="button"]:hover
+{
+
+	box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24), 0 14px 20px 0 rgba(0,0,0,0.19);
+	background-color:#5b5a5a
+}
+
+
+@media screen and (max-width: 1000px){
+	.items{
+		grid-template-columns: repeat (2, 1fr);
+
+	}
+}
+@media screen and (max-width: 768px){
+	.items{
+		grid-template-columns: repeat (1, 1fr);
+
+	}
+}
